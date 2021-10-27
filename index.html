@@ -1,204 +1,200 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="Assets/CSS/Style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>CivNatics</title>
 
-</head>
-<body>
-  <ul class="nav justify-content-end">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#"></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Sobre</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Quem Somos</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled">Contato</a>
-    </li>
-  </ul>
-
-    </div>
-
-
+    <style>
     
+      #idLog{
+        margin-top: 0%;
+      }
+      .navbar-brand img{
+        width: 9rem;
+      }
 
-    <div class="container">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="https://images.ctfassets.net/wn7ipiv9ue5v/2rFVmnqp4nDgHmtO3qywHd/4f1139f898494ba7bf8e0b9f8ed1634f/2KGMKT_CIV6_D2C_Hero_Banner_3840x2160__3_.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Bem Vindo ao Civilization V</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>              <div class="carousel-item" data-bs-interval="2000">
-                <img src="https://images.ctfassets.net/wn7ipiv9ue5v/2rFVmnqp4nDgHmtO3qywHd/4f1139f898494ba7bf8e0b9f8ed1634f/2KGMKT_CIV6_D2C_Hero_Banner_3840x2160__3_.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Brave a New World: Desbrave o Novo Mundo</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://images.ctfassets.net/wn7ipiv9ue5v/2rFVmnqp4nDgHmtO3qywHd/4f1139f898494ba7bf8e0b9f8ed1634f/2KGMKT_CIV6_D2C_Hero_Banner_3840x2160__3_.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+      #scrollAbout{
+        margin-top: 2rem;
+      }
+
+      #imgSobre{
+        width: 37em;
+        height: 100%
+      }
+
+      #imgHistoria{
+        width: 37em;
+        height: 100%
+      }
+
+      #img2K{
+        width: 37em;
+        height: 100%
+      }
+
+      .imgLogo{
+        width: 5rem;
+        height: 5rem;
+      }
+
+      #imgCopy{
+        margin-left: 3rem;
+        margin-bottom: 1rem;
+        width: 15rem;
+        height: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img src="./Assets/IMG/Logo sem plano de fundo.png" alt="Home"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#scrollAbout">Sobre o jogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#imgHistoria">Linha do tempo</a>
+              </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#SobreEmpresa">Sobre a empresa</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./sobre.html">Sobre nós</a>
+            </li>
+          </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
+        </div>
+      </div>
+    </nav>
+    <div
+    id="carouselVideoExample"
+    class="carousel slide carousel-fade"
+    data-mdb-ride="carousel"
+    >
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <video style="width: 100%;" class="img-fluid" autoplay loop muted>
+          <source src="./Assets/VID/CivilizationCarousel.mp4" type="video/mp4"/>
+        </video>
+      </div>
+    </div>
+    </div>
+    <ul id="scrollAbout">
+      <li class="media">
+        <div class="row">
+          <div class="col-sm">
+            <img class="mr-3" id="imgSobre" src="./Assets/IMG/Sobre o jogo.jpg" alt="Sobre o jogo">
           </div>
-
-
-
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://tecnoblog.net/wp-content/uploads/2020/05/civilization-6-700x394.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Sobre o Jogo</h5>
-                      <p class="card-text">Deseja vencer pela Diplomacia ou Guerra? Ciência ou Religião? Ou a Cultura é o seu caminho? Descubra como jogar o Civilization V.</p>
-                      <a href="#" class="btn btn-primary">Saiba Mais!</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://tecnoblog.net/wp-content/uploads/2020/05/civilization-6-700x394.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">História do jogo</h5>
-                      <p class="card-text">Conheça um pouco sobre as outras versões do Game e veja a evolução ao longo das edições.</p>
-                      <a href="#" class="btn btn-primary">Saiba Mais!</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://tecnoblog.net/wp-content/uploads/2020/05/civilization-6-700x394.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Sobre a empresa 2K.</h5>
-                      <p class="card-text">Conheça um pouco dos bastidores da 2K, empresa que produziu o Civilization V.</p>
-                      <a href="#" class="btn btn-primary">Saiba Mais!</a>
-                    </div>
-                  </div>
-              </div>
-            </div>
+          <div class="col-sm">
+            <h5 class="mt-0 mb-1"><strong>Deseja vencer pela Diplomacia ou Guerra? Ciência ou Religião? Descubra como jogar o Civilization V</strong></h5><br>
+            <p>
+              Civilization V (também conhecido por Civilization 5) é um jogo de estratégia 4X criado pela Firaxis, e o penúltimo da saga Civilization.<br>
+              Baseado em turnos no qual o jogador toma o controlo de um povo e o lidera através do início da história até ao futuro próximo, num mapa aleatório baseado em hexágonos.<br>
+              O jogador terá que conjugar pesquisa tecnológica, força militar, expansão populacional, diplomacia e economia, entre outros, para alcançar a vitória.
+            </p>
+              <a href="#" class="btn btn-primary">Saiba Mais!</a>
           </div>
-
-
-
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://tecnoblog.net/wp-content/uploads/2020/05/civilization-6-700x394.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Compre Agora!!!</h5>
-                      <p class="card-text">Gostou do Game? Seja direcionado para o site da Steam e efetue sua compra.</p>
-                      <a href="#" class="btn btn-primary">Clique Aqui e adquira!</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://tecnoblog.net/wp-content/uploads/2020/05/civilization-6-700x394.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Quem Nós Somos.</h5>
-                      <p class="card-text">Conheça um pouco mais sobre a equipe a frente do projeto.</p>
-                      <a href="#" class="btn btn-primary">Clique aqui!</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://tecnoblog.net/wp-content/uploads/2020/05/civilization-6-700x394.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Entre em Contato.</h5>
-                      <p class="card-text">Deseja compartilhar o seu conhecimento e se inteirar sobre o jogo? Entre em contato conosco</p>
-                      <a href="#" class="btn btn-primary">Preencha o Formulário!</a>
-                    </div>
-                  </div>
-              </div>
-            </div>
+        </div>
+      </li>
+      <li class="media my-4">
+      <div class="row">
+      <div class="col-sm">
+        <img class="mr-3" id="imgHistoria" src="./Assets/IMG/História.jpg" alt="História do jogo">
+      </div>
+      <div class="col-sm">
+        <h5 class="mt-0 mb-1"><strong>Conheça um pouco sobre as outras versões do Game</strong></h5>
+        <p>
+          Civilization é um jogo de eletrônico de computador de estratégia por turnos criado por Sid Meier para a Microprose em 1991. É o primeiro jogo da série Civilization.<br>
+          Civilization foi originalmente desenvolvido para DOS rodando em um PC. Já passou por inúmeras revisões para outras plataformas (incluindo Microsoft Windows, Macintosh, Linux, Amiga, PlayStation, N-Gage e Super Nintendo) e agora existe em diversas versões.<br>
+          A partir de Civilization III, o jogo começou a ser desenvolvido pela Firaxis Games e publicado pela Infogrames (agora Atari).
+        </p>
+          <a href="./Historia.html" target="_blank" class="btn btn-primary">Saiba Mais!</a>
+      </div>
+      </div>
+      </li>
+      <li class="media">
+        <div class="row">
+          <div class="col-sm">
+            <img class="mr-3" id="img2K" src="./Assets/IMG/2K.jpg" alt="Sobre a empresa">
           </div>
-
-          <div class="row" </div>
-
-          <div class="container">
-            <footer class="bg-white">
-                <div class="container py-5">
-                  <div class="row py-4">
-                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3">
-                      <p class="font-italic text-muted">Comunidadde desenvolvida por amigos fãs do jogo Sid Meier's Civilization V afim de encontrar mais colegas pelo mundo que admirem o Game e desejam somar esse conhecimento.</p>
-                      <ul class="list-inline mt-4">
-                        <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
-                        <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fa fa-pinterest"></i></a></li>
-                        <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fa fa-vimeo"></i></a></li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-                      <h6 class="text-uppercase font-weight-bold mb-4">Shop</h6>
-                      <ul class="list-unstyled mb-0">
-                        <li class="mb-2"><a href="#" class="text-muted">For Women</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">For Men</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">Stores</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">Our Blog</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-                      <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
-                      <ul class="list-unstyled mb-0">
-                        <li class="mb-2"><a href="#" class="text-muted">Login</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">Register</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">Wishlist</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted">Our Products</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-lg-0">
-                      <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
-                      <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
-                      <div class="p-1 rounded border">
-                        <div class="input-group">
-                          <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
-                          <div class="input-group-append">
-                            <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
-                          </div>
+          <div id="SobreEmpresa" class="col-sm">
+          <h5 class="mt-0 mb-1"><strong>Conheça um pouco dos bastidores da 2K</strong></h5><br> 
+          <p>
+            2K é uma publicadora de jogos eletrônicos estadunidense baseada em Novato, Califórnia.,<br> 
+            Fundada pela Take-Two Interactive em Janeiro de 2005 por meio das empresas 2K Games e 2K Sports, seguindo a aquisição pela Take-Two de uma empresa chamada Visual Concepts naquele mesmo mês.<br>
+            Originalmente baseada em Nova Iorque, ela foi movida para Novato em 2007. Uma terceira empresa, 2K Play, foi adicionada em Setembro de 2007. A empresa é governada por David Ismailer como presidente e Phil Dixon como diretor de operações.<br>
+            A empresa também dispõe de um estúdio de captura de movimento baseada em Petaluma, Califórnia.
+          </p>
+          <a href="./Empresa.html" class="btn btn-primary">Saiba Mais!</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  <div class="container">
+    <footer class="bg-white">
+      <div class="container py-5">
+        <div class="row py-4">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="./Assets/IMG/Comunidade.jpg" alt="" width="100%" class="mb-3">
+            <p class="font-italic text-muted">Comunidade desenvolvida por amigos fãs do jogo Sid Meier's Civilization V, afim de encontrar mais colegas pelo mundo que admirem o Game e desejam somar esse conhecimento.
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h6 class="text-center text-uppercase font-weight-bold mb-4">Social</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="text-center mb-2"><a href="https://pt-br.facebook.com/civ/" class="text-muted" target="_blank"><img class="imgLogo" src="./Assets/IMG/Facebook.jpg" alt=""></a></li>
+              <li class="text-center mb-2"><a href="https://www.instagram.com/civgame" class="text-muted" target="_blank"><img class="imgLogo" src="./Assets/IMG/Instagram.jpg" alt=""></a></li>
+              <li class="text-center mb-2"><a href="https://www.youtube.com/c/civilization" class="text-muted" target="_blank"><img class="imgLogo" src="./Assets/IMG/Youtube.jpg" alt=""></a></li>
+              <li class="text-center mb-2"><a href="http://www.civilization.com" class="text-muted" target="_blank"><img class="imgLogo" src="./Assets/IMG/Web.png" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h6 class="text-center text-uppercase font-weight-bold mb-4">Shop</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="text-center mb-2"><a href="https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/?l=brazilian" class="text-muted" target="_blank"><img class="imgLogo" src="./Assets/IMG/Steam.jpg" alt=""></a></li>
+              <li class="text-center mb-2"><a href="https://www.nuuvem.com/item/sid-meiers-civilization-vi" class="text-muted" target="_blank"><img class="imgLogo" src="./Assets/IMG/Nuuvem.jpg" alt=""></a></li>
+              <li class="text-center mb-2"><a href="https://www.epicgames.com/store/pt-BR/p/sid-meiers-civilization-vi" class="text-muted" target="_blank"><img class="imgLogo" src="./Assets/IMG/Epic Games.png" alt=""></a></li>
+            </ul>
+          </div>
+            <div class="col-lg-4 col-md-6 mb-lg-0" style="size: 100%;">
+              <h6 class="text-center text-uppercase font-weight-bold mb-4">Newsletter</h6>
+                <p class="text-center text-muted mb-4">Assine a Newsletter do Jogo</p>
+                  <div class="p-1 rounded border">
+                    <div class="input-group">
+                      <input type="email" placeholder="Entre com o seu e-mail" aria-describedby="button-addon1" class="text-center form-control border-0 shadow-0">
+                        <div class="input-group-append">
+                          <button id="button-addon1" type="submit" class="btn btn-link"><i class="fa fa-paper-plane"></i></button>
                         </div>
-                      </div>
                     </div>
                   </div>
-                </div>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                    <img id="imgCopy" src="./Assets/IMG/Copyright.jpg" alt="Classificação">
+                    <p id=" Copyright" style="color: rgb(150, 147, 147); text-align-last: center; font-size: 0.8rem;"><strong>
+                      Copyright ©2021 Take-Two Interactive Software, Inc.<br>
+                        Trademarks belong to their respective owners.<br>
+                                    All rights reserved.
+                    </strong></p>
+              </div>
           </div>
-          
-            
-
-
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
 </html>
