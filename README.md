@@ -1,7 +1,7 @@
 <h1 align = "center">Projeto "CivNatics"</h1>
 
 
-> Status do projeto: Em produção.
+> Status do projeto: Finalizado.
 
 <p align="justify"> Projeto final da disciplina (Front-End Essencial) da residência de software do Serratec Petrópolis.<br> 
 Nesse projeto, deveremos criar uma página da web utilizando todo o conteúdo aprendido durante as aulas de Front-End Essencial.                  

@@ -1,0 +1,17 @@
+body{
+    background-image: url(../IMG/Formulario.jpg); 
+    opacity: 100%; 
+    background-position-x: 60%;
+    background-position-y: 0%;
+}
+h2{
+    text-align: left;
+    padding-bottom: 2rem;
+}
+#Questionario{
+    margin-top: -8rem;
+    float: left;
+    width: 60%;
+    padding: 5%;
+    color: #fff;
+}
